@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  background-color: #0B2434;
+  width: 360px;
+  height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  background-color: #F5F5F5;
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 30px;
+}
+main .container h1 {
+  margin: 0 0;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+main .container p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.8rem;
+  width: 233px;
+  margin: 0 auto 30px;
+  color: #4A4E74;
+}
+main .container .dies {
+  display: grid;
+  grid-template-columns: repeat(5, 36px);
+  gap: 18px;
+}
+main .container .dies .die {
+  background-color: white;
+  height: 35px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2B283A;
+  box-shadow: 0 2px 2px 0 #00000038;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .container .dies .held {
+  background-color: #59E391;
+}
+main .container .roll,
+main .container .new-game {
+  margin: 25px auto;
+  background-color: #5035FF;
+  height: 36px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  display: block;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .container .roll {
+  width: 92px;
+}
+main .container .new-game {
+  width: fit-content;
+}
